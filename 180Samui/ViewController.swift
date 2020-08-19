@@ -52,7 +52,32 @@ class ViewController: UIViewController {
         diningButton.setImage(UIImage(named: diningImage), for: .normal)
         locationButton.setImage(UIImage(named: locationImage), for: .normal)
         galleryButton.setImage(UIImage(named: galleryImage), for: .normal)
+        
+        // Set Text for images
+        // add the label to your button
+        eventsButton.addSubview(setUpTextForImages(for: kTypeEvents))
+        diningButton.addSubview(setUpTextForImages(for: kTypeDining))
+        locationButton.addSubview(setUpTextForImages(for: kTypeLocation))
+        galleryButton.addSubview(setUpTextForImages(for: kTypeGallery))
 
+    }
+    
+    func setUpTextForImages(for text: String) -> UILabel {
+        
+        // Get the button sizes so, we can put the label in teh right place (it doesn't match which button we use as the same height and width.
+        let x = eventsButton.frame.size.width / 2
+        let y = eventsButton.frame.size.height - 20
+        
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 120, height: 32))
+        label.translatesAutoresizingMaskIntoConstraints = true
+        label.center = CGPoint(x: x, y: y)
+        label.textAlignment = .center
+        label.text = text
+        label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: label.font.pointSize)
+        label.font = label.font.withSize(28)
+
+        return label
     }
 
 

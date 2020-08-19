@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E4C67EE24ED295F005CD42B /* SamuiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C67ED24ED295F005CD42B /* SamuiTabBar.swift */; };
 		9EC979A124EBCEF6007AC85C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979A024EBCEF6007AC85C /* AppDelegate.swift */; };
 		9EC979A324EBCEF6007AC85C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979A224EBCEF6007AC85C /* SceneDelegate.swift */; };
 		9EC979A524EBCEF6007AC85C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979A424EBCEF6007AC85C /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E4C67ED24ED295F005CD42B /* SamuiTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamuiTabBar.swift; sourceTree = "<group>"; };
 		9EC9799D24EBCEF6007AC85C /* 180Samui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 180Samui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC979A024EBCEF6007AC85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC979A224EBCEF6007AC85C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				9EF190C724ED019B00771C79 /* SamuiScrollView.swift */,
+				9E4C67ED24ED295F005CD42B /* SamuiTabBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				9EC979A124EBCEF6007AC85C /* AppDelegate.swift in Sources */,
 				9EF190C824ED019B00771C79 /* SamuiScrollView.swift in Sources */,
 				9EC979A324EBCEF6007AC85C /* SceneDelegate.swift in Sources */,
+				9E4C67EE24ED295F005CD42B /* SamuiTabBar.swift in Sources */,
 				9EC979ED24ECF725007AC85C /* ScrollViewModel.swift in Sources */,
 				9EF190CA24ED0C2400771C79 /* Constants.swift in Sources */,
 			);
