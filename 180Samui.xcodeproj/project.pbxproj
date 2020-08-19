@@ -15,6 +15,21 @@
 		9EC979AD24EBCEF9007AC85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979AB24EBCEF9007AC85C /* LaunchScreen.storyboard */; };
 		9EC979B824EBCEF9007AC85C /* _80SamuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979B724EBCEF9007AC85C /* _80SamuiTests.swift */; };
 		9EC979C324EBCEF9007AC85C /* _80SamuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979C224EBCEF9007AC85C /* _80SamuiUITests.swift */; };
+		9EC979DB24EBD30E007AC85C /* dive.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979D024EBD30D007AC85C /* dive.jpg */; };
+		9EC979DC24EBD30E007AC85C /* SamuiLogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979D124EBD30D007AC85C /* SamuiLogo2.png */; };
+		9EC979DD24EBD30F007AC85C /* dining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979D224EBD30D007AC85C /* dining.jpg */; };
+		9EC979DE24EBD30F007AC85C /* Home_5104.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979D324EBD30D007AC85C /* Home_5104.1.jpg */; };
+		9EC979DF24EBD30F007AC85C /* home_0718-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979D424EBD30D007AC85C /* home_0718-1.jpg */; };
+		9EC979E024EBD30F007AC85C /* home_drone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979D524EBD30D007AC85C /* home_drone.jpg */; };
+		9EC979E124EBD30F007AC85C /* villa-design2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979D624EBD30D007AC85C /* villa-design2.jpg */; };
+		9EC979E224EBD30F007AC85C /* sunrise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979D724EBD30E007AC85C /* sunrise.jpg */; };
+		9EC979E324EBD30F007AC85C /* 180_home_sml.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979D824EBD30E007AC85C /* 180_home_sml.png */; };
+		9EC979E424EBD30F007AC85C /* couple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979D924EBD30E007AC85C /* couple.jpg */; };
+		9EC979E524EBD30F007AC85C /* pool.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979DA24EBD30E007AC85C /* pool.jpg */; };
+		9EC979E824EBD5C5007AC85C /* 180_home_sml-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979E724EBD5C5007AC85C /* 180_home_sml-black.png */; };
+		9EC979ED24ECF725007AC85C /* ScrollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979EC24ECF725007AC85C /* ScrollViewModel.swift */; };
+		9EF190C824ED019B00771C79 /* SamuiScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF190C724ED019B00771C79 /* SamuiScrollView.swift */; };
+		9EF190CA24ED0C2400771C79 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF190C924ED0C2400771C79 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +64,21 @@
 		9EC979BE24EBCEF9007AC85C /* 180SamuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 180SamuiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC979C224EBCEF9007AC85C /* _80SamuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _80SamuiUITests.swift; sourceTree = "<group>"; };
 		9EC979C424EBCEF9007AC85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EC979D024EBD30D007AC85C /* dive.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dive.jpg; sourceTree = "<group>"; };
+		9EC979D124EBD30D007AC85C /* SamuiLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SamuiLogo2.png; sourceTree = "<group>"; };
+		9EC979D224EBD30D007AC85C /* dining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dining.jpg; sourceTree = "<group>"; };
+		9EC979D324EBD30D007AC85C /* Home_5104.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Home_5104.1.jpg; sourceTree = "<group>"; };
+		9EC979D424EBD30D007AC85C /* home_0718-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "home_0718-1.jpg"; sourceTree = "<group>"; };
+		9EC979D524EBD30D007AC85C /* home_drone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home_drone.jpg; sourceTree = "<group>"; };
+		9EC979D624EBD30D007AC85C /* villa-design2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "villa-design2.jpg"; sourceTree = "<group>"; };
+		9EC979D724EBD30E007AC85C /* sunrise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunrise.jpg; sourceTree = "<group>"; };
+		9EC979D824EBD30E007AC85C /* 180_home_sml.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180_home_sml.png; sourceTree = "<group>"; };
+		9EC979D924EBD30E007AC85C /* couple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = couple.jpg; sourceTree = "<group>"; };
+		9EC979DA24EBD30E007AC85C /* pool.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pool.jpg; sourceTree = "<group>"; };
+		9EC979E724EBD5C5007AC85C /* 180_home_sml-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180_home_sml-black.png"; sourceTree = "<group>"; };
+		9EC979EC24ECF725007AC85C /* ScrollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewModel.swift; sourceTree = "<group>"; };
+		9EF190C724ED019B00771C79 /* SamuiScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamuiScrollView.swift; sourceTree = "<group>"; };
+		9EF190C924ED0C2400771C79 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Models/Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +109,11 @@
 		9EC9799424EBCEF6007AC85C = {
 			isa = PBXGroup;
 			children = (
+				9EF190C924ED0C2400771C79 /* Constants.swift */,
+				9EC979EB24ECF703007AC85C /* Models */,
+				9EC979EA24ECF6F7007AC85C /* VIewModels */,
+				9EC979E924ECF6EC007AC85C /* Views */,
+				9EC979E624EBD31F007AC85C /* Images */,
 				9EC9799F24EBCEF6007AC85C /* 180Samui */,
 				9EC979B624EBCEF9007AC85C /* 180SamuiTests */,
 				9EC979C124EBCEF9007AC85C /* 180SamuiUITests */,
@@ -126,6 +161,48 @@
 				9EC979C424EBCEF9007AC85C /* Info.plist */,
 			);
 			path = 180SamuiUITests;
+			sourceTree = "<group>";
+		};
+		9EC979E624EBD31F007AC85C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9EC979D824EBD30E007AC85C /* 180_home_sml.png */,
+				9EC979D924EBD30E007AC85C /* couple.jpg */,
+				9EC979E724EBD5C5007AC85C /* 180_home_sml-black.png */,
+				9EC979D024EBD30D007AC85C /* dive.jpg */,
+				9EC979D724EBD30E007AC85C /* sunrise.jpg */,
+				9EC979D224EBD30D007AC85C /* dining.jpg */,
+				9EC979D424EBD30D007AC85C /* home_0718-1.jpg */,
+				9EC979D324EBD30D007AC85C /* Home_5104.1.jpg */,
+				9EC979D524EBD30D007AC85C /* home_drone.jpg */,
+				9EC979DA24EBD30E007AC85C /* pool.jpg */,
+				9EC979D124EBD30D007AC85C /* SamuiLogo2.png */,
+				9EC979D624EBD30D007AC85C /* villa-design2.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9EC979E924ECF6EC007AC85C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EF190C724ED019B00771C79 /* SamuiScrollView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9EC979EA24ECF6F7007AC85C /* VIewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9EC979EC24ECF725007AC85C /* ScrollViewModel.swift */,
+			);
+			path = VIewModels;
+			sourceTree = "<group>";
+		};
+		9EC979EB24ECF703007AC85C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +309,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC979E224EBD30F007AC85C /* sunrise.jpg in Resources */,
+				9EC979DD24EBD30F007AC85C /* dining.jpg in Resources */,
+				9EC979E524EBD30F007AC85C /* pool.jpg in Resources */,
+				9EC979DC24EBD30E007AC85C /* SamuiLogo2.png in Resources */,
+				9EC979E324EBD30F007AC85C /* 180_home_sml.png in Resources */,
 				9EC979AD24EBCEF9007AC85C /* LaunchScreen.storyboard in Resources */,
 				9EC979AA24EBCEF9007AC85C /* Assets.xcassets in Resources */,
+				9EC979DF24EBD30F007AC85C /* home_0718-1.jpg in Resources */,
+				9EC979E124EBD30F007AC85C /* villa-design2.jpg in Resources */,
+				9EC979E424EBD30F007AC85C /* couple.jpg in Resources */,
+				9EC979E824EBD5C5007AC85C /* 180_home_sml-black.png in Resources */,
+				9EC979DE24EBD30F007AC85C /* Home_5104.1.jpg in Resources */,
+				9EC979E024EBD30F007AC85C /* home_drone.jpg in Resources */,
 				9EC979A824EBCEF6007AC85C /* Main.storyboard in Resources */,
+				9EC979DB24EBD30E007AC85C /* dive.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +350,10 @@
 			files = (
 				9EC979A524EBCEF6007AC85C /* ViewController.swift in Sources */,
 				9EC979A124EBCEF6007AC85C /* AppDelegate.swift in Sources */,
+				9EF190C824ED019B00771C79 /* SamuiScrollView.swift in Sources */,
 				9EC979A324EBCEF6007AC85C /* SceneDelegate.swift in Sources */,
+				9EC979ED24ECF725007AC85C /* ScrollViewModel.swift in Sources */,
+				9EF190CA24ED0C2400771C79 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
