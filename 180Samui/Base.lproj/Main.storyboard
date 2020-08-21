@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_80Samui" customModuleProvider="target" sceneMemberID="viewController">
@@ -195,7 +195,8 @@ Your Home</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="dhJ-FG-Afx"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="dhJ-FG-Afx"/>
+                    <navigationItem key="navigationItem" id="0HZ-RM-UUv"/>
                     <connections>
                         <outlet property="containerView" destination="oar-fG-Bpe" id="DUm-mm-VqN"/>
                         <outlet property="diningButton" destination="RX9-Oa-m9A" id="F8a-Ki-CII"/>
@@ -206,7 +207,49 @@ Your Home</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1039.1304347826087" y="107.14285714285714"/>
+            <point key="canvasLocation" x="1038" y="104"/>
+        </scene>
+        <!--FAQ-->
+        <scene sceneID="H1I-T5-7uV">
+            <objects>
+                <viewController id="1Dk-5R-H5U" customClass="FAQController" customModule="_80Samui" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mBu-lV-j1M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVG-u9-OMv">
+                                <rect key="frame" x="172" y="778" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="8lF-kT-Kx2"/>
+                                    <constraint firstAttribute="width" secondItem="qVG-u9-OMv" secondAttribute="height" multiplier="1:1" id="y6O-z0-eea"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="house.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="homeButtonPressed:" destination="1Dk-5R-H5U" eventType="touchUpInside" id="8QQ-TN-MqG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qVG-u9-OMv" firstAttribute="centerY" secondItem="XBf-Jh-Zsw" secondAttribute="bottom" id="PW7-vn-NOg"/>
+                            <constraint firstItem="qVG-u9-OMv" firstAttribute="centerX" secondItem="mBu-lV-j1M" secondAttribute="centerX" id="tsf-rI-tPe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XBf-Jh-Zsw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="FAQ" id="eGE-Xi-u0w" userLabel="FAQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zm7-Ye-fYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.68115942029" y="844.41964285714278"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="npd-iD-Xb1">
@@ -214,16 +257,78 @@ Your Home</string>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VYI-TD-G3O" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v0m-8V-5eU" customClass="SamuiTabBar" customModule="_80Samui" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="tmH-GP-iKZ"/>
+                        <segue destination="bph-3R-n4N" kind="relationship" relationship="viewControllers" id="XBN-G7-H28"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="WpO-R5-KgS"/>
+                        <segue destination="1Dk-5R-H5U" kind="relationship" relationship="viewControllers" id="hYY-qB-8fs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wS-pj-gNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="128.98550724637681" y="107.14285714285714"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="c7S-fT-R4C">
+            <objects>
+                <viewController id="bph-3R-n4N" customClass="ContactController" customModule="_80Samui" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rW2-p8-CFf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUj-tD-12v">
+                                <rect key="frame" x="172" y="778" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="JU7-09-DLM"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="house.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RUj-tD-12v" firstAttribute="centerX" secondItem="rW2-p8-CFf" secondAttribute="centerX" id="J5v-w0-Sge"/>
+                            <constraint firstItem="RUj-tD-12v" firstAttribute="width" secondItem="RUj-tD-12v" secondAttribute="height" multiplier="1:1" id="V5T-Uf-iPw"/>
+                            <constraint firstItem="RUj-tD-12v" firstAttribute="centerY" secondItem="qXi-n7-FY2" secondAttribute="bottom" id="uc4-Kt-Hll"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qXi-n7-FY2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="Contact" id="aKb-xn-DZP" userLabel="Contact"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yBw-Nl-ClA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.68115942029" y="-589.28571428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Yn-3x-Xbh">
+            <objects>
+                <viewController id="DKt-in-4YI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yWA-hd-mnI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="anU-Co-dnJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXn-Xy-Ocv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2054" y="107"/>
         </scene>
     </scenes>
     <resources>

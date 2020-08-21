@@ -29,6 +29,10 @@
 		9EC979E524EBD30F007AC85C /* pool.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979DA24EBD30E007AC85C /* pool.jpg */; };
 		9EC979E824EBD5C5007AC85C /* 180_home_sml-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979E724EBD5C5007AC85C /* 180_home_sml-black.png */; };
 		9EC979ED24ECF725007AC85C /* ScrollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979EC24ECF725007AC85C /* ScrollViewModel.swift */; };
+		9EED3BE824EFAFD80014C67D /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED3BE724EFAFD80014C67D /* ContactController.swift */; };
+		9EED3BED24EFB00C0014C67D /* FAQController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED3BEC24EFB00C0014C67D /* FAQController.swift */; };
+		9EED3BEE24EFB00C0014C67D /* FAQController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED3BEC24EFB00C0014C67D /* FAQController.swift */; };
+		9EED3BEF24EFB00C0014C67D /* FAQController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EED3BEC24EFB00C0014C67D /* FAQController.swift */; };
 		9EF190C824ED019B00771C79 /* SamuiScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF190C724ED019B00771C79 /* SamuiScrollView.swift */; };
 		9EF190CA24ED0C2400771C79 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF190C924ED0C2400771C79 /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -79,8 +83,10 @@
 		9EC979DA24EBD30E007AC85C /* pool.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pool.jpg; sourceTree = "<group>"; };
 		9EC979E724EBD5C5007AC85C /* 180_home_sml-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180_home_sml-black.png"; sourceTree = "<group>"; };
 		9EC979EC24ECF725007AC85C /* ScrollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewModel.swift; sourceTree = "<group>"; };
+		9EED3BE724EFAFD80014C67D /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
+		9EED3BEC24EFB00C0014C67D /* FAQController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQController.swift; sourceTree = "<group>"; };
 		9EF190C724ED019B00771C79 /* SamuiScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamuiScrollView.swift; sourceTree = "<group>"; };
-		9EF190C924ED0C2400771C79 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Models/Constants.swift; sourceTree = "<group>"; };
+		9EF190C924ED0C2400771C79 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +117,7 @@
 		9EC9799424EBCEF6007AC85C = {
 			isa = PBXGroup;
 			children = (
-				9EF190C924ED0C2400771C79 /* Constants.swift */,
+				9EED3BEB24EFAFE40014C67D /* Controllers */,
 				9EC979EB24ECF703007AC85C /* Models */,
 				9EC979EA24ECF6F7007AC85C /* VIewModels */,
 				9EC979E924ECF6EC007AC85C /* Views */,
@@ -138,7 +144,6 @@
 			children = (
 				9EC979A024EBCEF6007AC85C /* AppDelegate.swift */,
 				9EC979A224EBCEF6007AC85C /* SceneDelegate.swift */,
-				9EC979A424EBCEF6007AC85C /* ViewController.swift */,
 				9EC979A624EBCEF6007AC85C /* Main.storyboard */,
 				9EC979A924EBCEF9007AC85C /* Assets.xcassets */,
 				9EC979AB24EBCEF9007AC85C /* LaunchScreen.storyboard */,
@@ -204,8 +209,19 @@
 		9EC979EB24ECF703007AC85C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9EF190C924ED0C2400771C79 /* Constants.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9EED3BEB24EFAFE40014C67D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EC979A424EBCEF6007AC85C /* ViewController.swift */,
+				9EED3BEC24EFB00C0014C67D /* FAQController.swift */,
+				9EED3BE724EFAFD80014C67D /* ContactController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,11 +369,13 @@
 			files = (
 				9EC979A524EBCEF6007AC85C /* ViewController.swift in Sources */,
 				9EC979A124EBCEF6007AC85C /* AppDelegate.swift in Sources */,
+				9EED3BE824EFAFD80014C67D /* ContactController.swift in Sources */,
 				9EF190C824ED019B00771C79 /* SamuiScrollView.swift in Sources */,
 				9EC979A324EBCEF6007AC85C /* SceneDelegate.swift in Sources */,
 				9E4C67EE24ED295F005CD42B /* SamuiTabBar.swift in Sources */,
 				9EC979ED24ECF725007AC85C /* ScrollViewModel.swift in Sources */,
 				9EF190CA24ED0C2400771C79 /* Constants.swift in Sources */,
+				9EED3BED24EFB00C0014C67D /* FAQController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EED3BEE24EFB00C0014C67D /* FAQController.swift in Sources */,
 				9EC979B824EBCEF9007AC85C /* _80SamuiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EED3BEF24EFB00C0014C67D /* FAQController.swift in Sources */,
 				9EC979C324EBCEF9007AC85C /* _80SamuiUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -41,7 +41,8 @@ class SamuiTabBar: UITabBar {
         
         //let buttonRadius: CGFloat = 35
         //        return abs(self.center.x - point.x) > buttonRadius || abs(point.y) > buttonRadius
-        
+        print("PRESSED")
+
         if self.bounds.contains(point) {
             let buttonRadius: CGFloat = 35
             let value = abs(self.center.x - point.x) > buttonRadius || abs(point.y) > buttonRadius
