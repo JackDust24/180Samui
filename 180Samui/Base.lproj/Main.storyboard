@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H1v-RQ-La7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="783"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2w3-Vq-Wrg" userLabel="TopView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="259.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="261"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_0718-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="l4p-3g-mk9">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="259.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="261"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,19 +34,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bln-lJ-eQm" userLabel="MiddleView">
-                                        <rect key="frame" x="0.0" y="259.33333333333337" width="414" height="259.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="261" width="414" height="261"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="180_home_sml-black.png" translatesAutoresizingMaskIntoConstraints="NO" id="veM-W7-dcw">
-                                                <rect key="frame" x="67" y="-52.999999999999972" width="280" height="107"/>
+                                                <rect key="frame" x="67" y="-53" width="280" height="107"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oar-fG-Bpe" userLabel="ContainerView">
-                                                <rect key="frame" x="67" y="67.000000000000014" width="280" height="162.33333333333337"/>
+                                                <rect key="frame" x="67" y="67" width="280" height="164"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xm5-sK-zSL" userLabel="CardView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="162.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="164"/>
                                                         <subviews>
                                                             <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvY-P6-GjJ">
-                                                                <rect key="frame" x="0.0" y="119.33333333333337" width="280" height="43"/>
+                                                                <rect key="frame" x="0.0" y="121" width="280" height="43"/>
                                                                 <color key="backgroundColor" red="1" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="28"/>
                                                                 <state key="normal" title="Book Now"/>
@@ -55,7 +55,7 @@
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jf-hb-h72">
-                                                                <rect key="frame" x="59.333333333333329" y="42" width="175.66666666666669" height="57.333333333333343"/>
+                                                                <rect key="frame" x="59.333333333333329" y="43.666666666666686" width="175.66666666666669" height="57.333333333333343"/>
                                                                 <string key="text">Make Paradise
 Your Home</string>
                                                                 <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="26"/>
@@ -94,7 +94,7 @@ Your Home</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wfk-M9-E03" userLabel="BottomView">
-                                        <rect key="frame" x="0.0" y="518.66666666666663" width="414" height="259.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="522" width="414" height="261"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events and Things To Do" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nf-8s-rUI">
                                                 <rect key="frame" x="20" y="20" width="230" height="22.333333333333329"/>
@@ -103,7 +103,7 @@ Your Home</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8l-5E-6zS">
-                                                <rect key="frame" x="20" y="52.333333333333371" width="374" height="197"/>
+                                                <rect key="frame" x="20" y="52.333333333333357" width="374" height="198.66666666666663"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LI3-rK-mCG">
                                                         <rect key="frame" x="0.0" y="0.0" width="900" height="130"/>
@@ -166,36 +166,19 @@ Your Home</string>
                                     <constraint firstAttribute="trailing" secondItem="Wfk-M9-E03" secondAttribute="trailing" id="xZI-C0-R1k"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7p-kQ-BIa">
-                                <rect key="frame" x="172" y="778" width="70" height="70"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="m7p-kQ-BIa" secondAttribute="height" multiplier="1:1" id="K9b-cI-kev"/>
-                                    <constraint firstAttribute="width" constant="70" id="PKz-Kq-srV"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="house.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="m7p-kQ-BIa" firstAttribute="top" secondItem="H1v-RQ-La7" secondAttribute="bottom" id="CmI-n0-r4B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="H1v-RQ-La7" secondAttribute="bottom" constant="30" id="CmI-n0-r4B"/>
                             <constraint firstItem="H1v-RQ-La7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FQR-Ge-WaB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m7p-kQ-BIa" secondAttribute="centerY" id="HKY-FL-vrp"/>
                             <constraint firstItem="H1v-RQ-La7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HQa-Ck-kWr"/>
                             <constraint firstAttribute="trailing" secondItem="H1v-RQ-La7" secondAttribute="trailing" id="IeO-0w-ULT"/>
-                            <constraint firstItem="m7p-kQ-BIa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JtP-h3-oot"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="dhJ-FG-Afx"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_icon_select" selectedImage="homeIcon" id="dhJ-FG-Afx">
+                        <inset key="imageInsets" minX="0.0" minY="-25" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="0HZ-RM-UUv"/>
                     <connections>
                         <outlet property="containerView" destination="oar-fG-Bpe" id="DUm-mm-VqN"/>
@@ -217,46 +200,87 @@ Your Home</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVG-u9-OMv">
-                                <rect key="frame" x="172" y="778" width="70" height="70"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AV5-EP-mcL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Can I Help You?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ol7-Dc-nrR">
+                                        <rect key="frame" x="71.333333333333343" y="94.666666666666671" width="271.66666666666663" height="31"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="180_home_sml.png" translatesAutoresizingMaskIntoConstraints="NO" id="FZU-oJ-lZ3">
+                                        <rect key="frame" x="100" y="145.66666666666666" width="214" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4v8-rV-9ip"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="8lF-kT-Kx2"/>
-                                    <constraint firstAttribute="width" secondItem="qVG-u9-OMv" secondAttribute="height" multiplier="1:1" id="y6O-z0-eea"/>
+                                    <constraint firstItem="FZU-oJ-lZ3" firstAttribute="leading" secondItem="AV5-EP-mcL" secondAttribute="leading" constant="100" id="0mM-g3-pXp"/>
+                                    <constraint firstItem="FZU-oJ-lZ3" firstAttribute="top" secondItem="Ol7-Dc-nrR" secondAttribute="bottom" constant="20" id="BHH-Iw-nzG"/>
+                                    <constraint firstAttribute="trailing" secondItem="FZU-oJ-lZ3" secondAttribute="trailing" constant="100" id="Qpi-GH-SEh"/>
+                                    <constraint firstItem="Ol7-Dc-nrR" firstAttribute="centerX" secondItem="AV5-EP-mcL" secondAttribute="centerX" id="Tak-VS-DXZ"/>
+                                    <constraint firstAttribute="height" constant="220" id="Trf-0F-ji2"/>
+                                    <constraint firstItem="Ol7-Dc-nrR" firstAttribute="centerY" secondItem="AV5-EP-mcL" secondAttribute="centerY" id="WrK-xo-W1l"/>
+                                    <constraint firstItem="FZU-oJ-lZ3" firstAttribute="centerX" secondItem="AV5-EP-mcL" secondAttribute="centerX" id="nfp-zG-lob"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="house.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="homeButtonPressed:" destination="1Dk-5R-H5U" eventType="touchUpInside" id="8QQ-TN-MqG"/>
-                                </connections>
-                            </button>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ecw-uf-L6J">
+                                <rect key="frame" x="0.0" y="220" width="414" height="593"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Questions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40s-NJ-yco">
+                                        <rect key="frame" x="15" y="20" width="186" height="31"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="28"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYb-GN-VIS" userLabel="DataView">
+                                        <rect key="frame" x="0.0" y="71" width="414" height="522"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oYb-GN-VIS" secondAttribute="trailing" id="Ek6-DM-h7U"/>
+                                    <constraint firstItem="oYb-GN-VIS" firstAttribute="top" secondItem="40s-NJ-yco" secondAttribute="bottom" constant="20" id="G0r-Bk-oYC"/>
+                                    <constraint firstItem="oYb-GN-VIS" firstAttribute="leading" secondItem="Ecw-uf-L6J" secondAttribute="leading" id="VgO-Jf-0dr"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="40s-NJ-yco" secondAttribute="trailing" constant="20" symbolic="YES" id="dVZ-He-AgO"/>
+                                    <constraint firstAttribute="bottom" secondItem="oYb-GN-VIS" secondAttribute="bottom" id="hU6-P8-Zap"/>
+                                    <constraint firstItem="40s-NJ-yco" firstAttribute="top" secondItem="Ecw-uf-L6J" secondAttribute="top" constant="20" id="ixE-Mq-vfy"/>
+                                    <constraint firstItem="40s-NJ-yco" firstAttribute="leading" secondItem="Ecw-uf-L6J" secondAttribute="leading" constant="15" id="t8s-DY-h6Q"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qVG-u9-OMv" firstAttribute="centerY" secondItem="XBf-Jh-Zsw" secondAttribute="bottom" id="PW7-vn-NOg"/>
-                            <constraint firstItem="qVG-u9-OMv" firstAttribute="centerX" secondItem="mBu-lV-j1M" secondAttribute="centerX" id="tsf-rI-tPe"/>
+                            <constraint firstItem="AV5-EP-mcL" firstAttribute="centerX" secondItem="mBu-lV-j1M" secondAttribute="centerX" id="NkQ-Kg-G47"/>
+                            <constraint firstItem="Ecw-uf-L6J" firstAttribute="trailing" secondItem="XBf-Jh-Zsw" secondAttribute="trailing" id="S0g-NJ-n0M"/>
+                            <constraint firstItem="Ecw-uf-L6J" firstAttribute="top" secondItem="AV5-EP-mcL" secondAttribute="bottom" id="h2f-qd-i2U"/>
+                            <constraint firstItem="AV5-EP-mcL" firstAttribute="leading" secondItem="XBf-Jh-Zsw" secondAttribute="leading" id="hkF-XB-iAB"/>
+                            <constraint firstItem="Ecw-uf-L6J" firstAttribute="leading" secondItem="XBf-Jh-Zsw" secondAttribute="leading" id="iMr-6r-Ni0"/>
+                            <constraint firstItem="XBf-Jh-Zsw" firstAttribute="bottom" secondItem="Ecw-uf-L6J" secondAttribute="bottom" id="nQp-tj-jNd"/>
+                            <constraint firstItem="AV5-EP-mcL" firstAttribute="top" secondItem="mBu-lV-j1M" secondAttribute="top" id="sgR-ma-ApN"/>
+                            <constraint firstItem="AV5-EP-mcL" firstAttribute="trailing" secondItem="XBf-Jh-Zsw" secondAttribute="trailing" id="siE-a1-6KZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XBf-Jh-Zsw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="FAQ" id="eGE-Xi-u0w" userLabel="FAQ"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="FAQ" image="tray.2" catalog="system" selectedImage="square.and.arrow.up" id="eGE-Xi-u0w" userLabel="FAQ"/>
+                    <connections>
+                        <outlet property="dataView" destination="oYb-GN-VIS" id="4nh-t3-uIL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zm7-Ye-fYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1037.68115942029" y="844.41964285714278"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Samui180 Tab Bar View Controller-->
         <scene sceneID="npd-iD-Xb1">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VYI-TD-G3O" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VYI-TD-G3O" customClass="Samui180TabBarViewController" customModule="_80Samui" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v0m-8V-5eU" customClass="SamuiTabBar" customModule="_80Samui" customModuleProvider="target">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v0m-8V-5eU" customClass="ProminentTabBar" customModule="_80Samui" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -276,40 +300,17 @@ Your Home</string>
             </objects>
             <point key="canvasLocation" x="128.98550724637681" y="107.14285714285714"/>
         </scene>
-        <!--Contact-->
+        <!--Chat-->
         <scene sceneID="c7S-fT-R4C">
             <objects>
-                <viewController id="bph-3R-n4N" customClass="ContactController" customModule="_80Samui" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bph-3R-n4N" userLabel="Chat" customClass="ChatViewController" customModule="_80Samui" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rW2-p8-CFf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUj-tD-12v">
-                                <rect key="frame" x="172" y="778" width="70" height="70"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="JU7-09-DLM"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="house.fill" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="heavy"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="RUj-tD-12v" firstAttribute="centerX" secondItem="rW2-p8-CFf" secondAttribute="centerX" id="J5v-w0-Sge"/>
-                            <constraint firstItem="RUj-tD-12v" firstAttribute="width" secondItem="RUj-tD-12v" secondAttribute="height" multiplier="1:1" id="V5T-Uf-iPw"/>
-                            <constraint firstItem="RUj-tD-12v" firstAttribute="centerY" secondItem="qXi-n7-FY2" secondAttribute="bottom" id="uc4-Kt-Hll"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qXi-n7-FY2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Contact" id="aKb-xn-DZP" userLabel="Contact"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Contact" id="aKb-xn-DZP" userLabel="Chat"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBw-Nl-ClA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -333,7 +334,11 @@ Your Home</string>
     </scenes>
     <resources>
         <image name="180_home_sml-black.png" width="272" height="107"/>
+        <image name="180_home_sml.png" width="60" height="23.5"/>
+        <image name="homeIcon" width="70" height="70"/>
         <image name="home_0718-1.jpg" width="2000" height="1335"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="home_icon_select" width="70" height="70"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="tray.2" catalog="system" width="128" height="114"/>
     </resources>
 </document>
