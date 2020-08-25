@@ -59,23 +59,8 @@ class FAQController: UIViewController, UITableViewDataSource, UITableViewDelegat
         setUpDataView()
         
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Check data loaded - \(faqDataToDisplay.count)")
-        return faqDataToDisplay.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        // cell.textLabel?.text = rowsToDisplay[indexPath.row]
-        let stringTest = faqViewModel.retrieveQuestionFromFAQArray(selectedRow: indexPath.row, selectedFAQArray: faqDataToDisplay)
-        cell.textLabel?.text = stringTest
-        print("DATA Test - \(stringTest)")
-        
-        return cell
-    }
-    
-    
+   
+    //MARK: Segemented Controller
     func setUpDataView() {
         
         let paddedStackView = UIStackView(arrangedSubviews: [segmentedControl])
@@ -104,10 +89,55 @@ class FAQController: UIViewController, UITableViewDataSource, UITableViewDelegat
         
     }
     
-    @IBAction func homeButtonPressed(_ sender: Any) {
-        print("PRESSED2")
-        
+}
+
+extension FAQController {
+    
+    //MARK: Table View Controller Data Source and Delagtes
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("Check data loaded - \(faqDataToDisplay.count)")
+        return faqDataToDisplay.count
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        // cell.textLabel?.text = rowsToDisplay[indexPath.row]
+        let questionText = faqViewModel.retrieveSpecificDetailsFromFAQArray(selectedRow: indexPath.row, selectedFAQArray: faqDataToDisplay, isItAQuestion: true)
+        cell.textLabel?.text = questionText
+        cell.textLabel?.numberOfLines = 2
+        cell.accessoryType = .disclosureIndicator
+       
+        return cell
+    }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let questionText = faqViewModel.retrieveSpecificDetailsFromFAQArray(selectedRow: indexPath.row, selectedFAQArray: faqDataToDisplay, isItAQuestion: true)
+        let answerText = faqViewModel.retrieveSpecificDetailsFromFAQArray(selectedRow: indexPath.row, selectedFAQArray: faqDataToDisplay, isItAQuestion: false)
+        
+        print("Selection Test - \(questionText)")
+        
+//        let faqDetailVC = "FAQDetailViewController"
+//        let detailViewController = storyboard?.instantiateViewController(withIdentifier: faqDetailVC)  as! FAQDetailViewController
+//        self.navigationController?.pushViewController(detailViewController, animated: true)
+//
+//        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let objVC: FAQDetailViewController? = storyboard?.instantiateViewController(withIdentifier: "FAQDetailViewController") as? FAQDetailViewController
+        
+       //  let aObjNavi = UINavigationController(rootViewController: objVC!)
+        
+        objVC?.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        
+        self.present(objVC!, animated: true) {
+            print("Present Contr5oller")
+            
+            objVC?.answerTextView.text = answerText
+            objVC?.questionLabel.text = questionText
+        }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+
+        
+    }
 }

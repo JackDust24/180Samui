@@ -14,6 +14,8 @@
 		9EAAE45024F4B0F500D9A406 /* FAQData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAE44F24F4B0F500D9A406 /* FAQData.swift */; };
 		9EAAE45224F4B10700D9A406 /* Sample_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9EAAE45124F4B10700D9A406 /* Sample_data.json */; };
 		9EAAE45424F4B1A700D9A406 /* FAQDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAE45324F4B1A700D9A406 /* FAQDataModel.swift */; };
+		9EAAE45724F4C5E100D9A406 /* FAQDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAE45524F4C5E100D9A406 /* FAQDetailViewController.swift */; };
+		9EAAE45B24F5117000D9A406 /* HelperUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAE45A24F5117000D9A406 /* HelperUI.swift */; };
 		9EC979A124EBCEF6007AC85C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979A024EBCEF6007AC85C /* AppDelegate.swift */; };
 		9EC979A324EBCEF6007AC85C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979A224EBCEF6007AC85C /* SceneDelegate.swift */; };
 		9EC979A524EBCEF6007AC85C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979A424EBCEF6007AC85C /* ViewController.swift */; };
@@ -80,6 +82,8 @@
 		9EAAE44F24F4B0F500D9A406 /* FAQData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQData.swift; sourceTree = "<group>"; };
 		9EAAE45124F4B10700D9A406 /* Sample_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sample_data.json; sourceTree = "<group>"; };
 		9EAAE45324F4B1A700D9A406 /* FAQDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDataModel.swift; sourceTree = "<group>"; };
+		9EAAE45524F4C5E100D9A406 /* FAQDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDetailViewController.swift; sourceTree = "<group>"; };
+		9EAAE45A24F5117000D9A406 /* HelperUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperUI.swift; sourceTree = "<group>"; };
 		9EC9799D24EBCEF6007AC85C /* 180Samui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 180Samui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC979A024EBCEF6007AC85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC979A224EBCEF6007AC85C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,9 +156,18 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		9EAAE45924F5115F00D9A406 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				9EAAE45A24F5117000D9A406 /* HelperUI.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
 		9EC9799424EBCEF6007AC85C = {
 			isa = PBXGroup;
 			children = (
+				9EAAE45924F5115F00D9A406 /* Misc */,
 				9EAAE44C24F4AFA400D9A406 /* Data */,
 				9EED3BEB24EFAFE40014C67D /* Controllers */,
 				9EC979EB24ECF703007AC85C /* Models */,
@@ -266,6 +279,7 @@
 				9EED3BEC24EFB00C0014C67D /* FAQController.swift */,
 				9EED3BE724EFAFD80014C67D /* ContactController.swift */,
 				9ED853D224F38F66008A73DB /* ChatViewController.swift */,
+				9EAAE45524F4C5E100D9A406 /* FAQDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -415,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ED853DB24F3AE47008A73DB /* UIView+Layout.swift in Sources */,
+				9EAAE45724F4C5E100D9A406 /* FAQDetailViewController.swift in Sources */,
 				9EC979A524EBCEF6007AC85C /* ViewController.swift in Sources */,
 				9EC979A124EBCEF6007AC85C /* AppDelegate.swift in Sources */,
 				9ED853D324F38F66008A73DB /* ChatViewController.swift in Sources */,
@@ -432,6 +447,7 @@
 				9EF190CA24ED0C2400771C79 /* Constants.swift in Sources */,
 				9EED3BED24EFB00C0014C67D /* FAQController.swift in Sources */,
 				9E88D38524F3B8890046FF53 /* FAQDataViewModel.swift in Sources */,
+				9EAAE45B24F5117000D9A406 /* HelperUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

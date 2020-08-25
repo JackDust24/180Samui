@@ -22,6 +22,7 @@ public class FAQDataViewModel {
 
     }
    
+    // MARK: View table population
     func returnFAQForTable(selectedIndex: Int) -> [FAQ] {
         print("HandleChange")
         print(selectedIndex)
@@ -40,10 +41,19 @@ public class FAQDataViewModel {
         return arrayForTableView
     }
     
-    func retrieveQuestionFromFAQArray(selectedRow: Int, selectedFAQArray: [FAQ]) -> String {
+    // MARK: Specific Rows information
+    func retrieveSpecificDetailsFromFAQArray(selectedRow: Int, selectedFAQArray: [FAQ], isItAQuestion question: Bool) -> String {
+        
+        // Return an answer
+        if !question {
+            let answers = selectedFAQArray.map { $0.answer }
+            print("answers to return  \(answers)")
+            
+            return answers[selectedRow]
+        }
+        
         let questions = selectedFAQArray.map { $0.question }
-        print("JW - Test \(questions)")
-        print(questions[selectedRow])
+        print("questions to return  \(questions)")
 
         //return "Hello World"
         return questions[selectedRow]
