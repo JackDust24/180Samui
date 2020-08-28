@@ -16,6 +16,13 @@
 		9EAAE45424F4B1A700D9A406 /* FAQDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAE45324F4B1A700D9A406 /* FAQDataModel.swift */; };
 		9EAAE45724F4C5E100D9A406 /* FAQDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAE45524F4C5E100D9A406 /* FAQDetailViewController.swift */; };
 		9EAAE45B24F5117000D9A406 /* HelperUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAE45A24F5117000D9A406 /* HelperUI.swift */; };
+		9EB6C01F24F62F4700A3C9F7 /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C01E24F62F4700A3C9F7 /* LinksViewController.swift */; };
+		9EB6C02124F62F6B00A3C9F7 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C02024F62F6B00A3C9F7 /* LocationViewController.swift */; };
+		9EB6C02324F6428A00A3C9F7 /* SamuiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C02224F6428A00A3C9F7 /* SamuiCollectionViewCell.swift */; };
+		9EB6C02524F6621F00A3C9F7 /* SamuiCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C02424F6621F00A3C9F7 /* SamuiCollectionViewController.swift */; };
+		9EB79C4E24F8FE61007EDADE /* banner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EB79C4D24F8FE60007EDADE /* banner.jpg */; };
+		9EB79C5024F9026D007EDADE /* PromotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB79C4F24F9026D007EDADE /* PromotionViewModel.swift */; };
+		9EB79C5224F9079C007EDADE /* GetPromotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB79C5124F9079C007EDADE /* GetPromotion.swift */; };
 		9EC979A124EBCEF6007AC85C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979A024EBCEF6007AC85C /* AppDelegate.swift */; };
 		9EC979A324EBCEF6007AC85C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979A224EBCEF6007AC85C /* SceneDelegate.swift */; };
 		9EC979A524EBCEF6007AC85C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979A424EBCEF6007AC85C /* ViewController.swift */; };
@@ -84,6 +91,13 @@
 		9EAAE45324F4B1A700D9A406 /* FAQDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDataModel.swift; sourceTree = "<group>"; };
 		9EAAE45524F4C5E100D9A406 /* FAQDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDetailViewController.swift; sourceTree = "<group>"; };
 		9EAAE45A24F5117000D9A406 /* HelperUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperUI.swift; sourceTree = "<group>"; };
+		9EB6C01E24F62F4700A3C9F7 /* LinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LinksViewController.swift; path = Controllers/LinksViewController.swift; sourceTree = SOURCE_ROOT; };
+		9EB6C02024F62F6B00A3C9F7 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		9EB6C02224F6428A00A3C9F7 /* SamuiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamuiCollectionViewCell.swift; sourceTree = "<group>"; };
+		9EB6C02424F6621F00A3C9F7 /* SamuiCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamuiCollectionViewController.swift; sourceTree = "<group>"; };
+		9EB79C4D24F8FE60007EDADE /* banner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banner.jpg; sourceTree = "<group>"; };
+		9EB79C4F24F9026D007EDADE /* PromotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionViewModel.swift; sourceTree = "<group>"; };
+		9EB79C5124F9079C007EDADE /* GetPromotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPromotion.swift; sourceTree = "<group>"; };
 		9EC9799D24EBCEF6007AC85C /* 180Samui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 180Samui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC979A024EBCEF6007AC85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC979A224EBCEF6007AC85C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +181,7 @@
 		9EC9799424EBCEF6007AC85C = {
 			isa = PBXGroup;
 			children = (
+				9EB79C5124F9079C007EDADE /* GetPromotion.swift */,
 				9EAAE45924F5115F00D9A406 /* Misc */,
 				9EAAE44C24F4AFA400D9A406 /* Data */,
 				9EED3BEB24EFAFE40014C67D /* Controllers */,
@@ -197,6 +212,7 @@
 				9EC979A024EBCEF6007AC85C /* AppDelegate.swift */,
 				9EC979A224EBCEF6007AC85C /* SceneDelegate.swift */,
 				9EC979A624EBCEF6007AC85C /* Main.storyboard */,
+				9EB79C4F24F9026D007EDADE /* PromotionViewModel.swift */,
 				9EC979A924EBCEF9007AC85C /* Assets.xcassets */,
 				9EC979AB24EBCEF9007AC85C /* LaunchScreen.storyboard */,
 				9EC979AE24EBCEF9007AC85C /* Info.plist */,
@@ -226,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				9EC979D824EBD30E007AC85C /* 180_home_sml.png */,
+				9EB79C4D24F8FE60007EDADE /* banner.jpg */,
 				9EC979D924EBD30E007AC85C /* couple.jpg */,
 				9EC979E724EBD5C5007AC85C /* 180_home_sml-black.png */,
 				9EC979D024EBD30D007AC85C /* dive.jpg */,
@@ -248,6 +265,7 @@
 				9E4C67ED24ED295F005CD42B /* SamuiTabBar.swift */,
 				9EED3BF024EFC7380014C67D /* Samui180TabBarViewController.swift */,
 				9ED853D624F3A5CC008A73DB /* FAQDataView.swift */,
+				9EB6C02424F6621F00A3C9F7 /* SamuiCollectionViewController.swift */,
 				9ED853DA24F3AE47008A73DB /* UIView+Layout.swift */,
 			);
 			path = Views;
@@ -257,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				9EC979EC24ECF725007AC85C /* ScrollViewModel.swift */,
-				9E88D38424F3B8890046FF53 /* FAQDataViewModel.swift */,
 			);
 			path = VIewModels;
 			sourceTree = "<group>";
@@ -268,6 +285,7 @@
 				9EF190C924ED0C2400771C79 /* Constants.swift */,
 				9E88D38624F3B96B0046FF53 /* FAQModel.swift */,
 				9E88D38824F3D9BF0046FF53 /* AbstractDataFAQ.swift */,
+				9E88D38424F3B8890046FF53 /* FAQDataViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -278,8 +296,11 @@
 				9EC979A424EBCEF6007AC85C /* ViewController.swift */,
 				9EED3BEC24EFB00C0014C67D /* FAQController.swift */,
 				9EED3BE724EFAFD80014C67D /* ContactController.swift */,
+				9EB6C01E24F62F4700A3C9F7 /* LinksViewController.swift */,
 				9ED853D224F38F66008A73DB /* ChatViewController.swift */,
 				9EAAE45524F4C5E100D9A406 /* FAQDetailViewController.swift */,
+				9EB6C02024F62F6B00A3C9F7 /* LocationViewController.swift */,
+				9EB6C02224F6428A00A3C9F7 /* SamuiCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -390,6 +411,7 @@
 			files = (
 				9EC979E224EBD30F007AC85C /* sunrise.jpg in Resources */,
 				9EC979DD24EBD30F007AC85C /* dining.jpg in Resources */,
+				9EB79C4E24F8FE61007EDADE /* banner.jpg in Resources */,
 				9EC979E524EBD30F007AC85C /* pool.jpg in Resources */,
 				9EAAE45224F4B10700D9A406 /* Sample_data.json in Resources */,
 				9EC979DC24EBD30E007AC85C /* SamuiLogo2.png in Resources */,
@@ -428,12 +450,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB6C02524F6621F00A3C9F7 /* SamuiCollectionViewController.swift in Sources */,
 				9ED853DB24F3AE47008A73DB /* UIView+Layout.swift in Sources */,
+				9EB79C5024F9026D007EDADE /* PromotionViewModel.swift in Sources */,
 				9EAAE45724F4C5E100D9A406 /* FAQDetailViewController.swift in Sources */,
 				9EC979A524EBCEF6007AC85C /* ViewController.swift in Sources */,
 				9EC979A124EBCEF6007AC85C /* AppDelegate.swift in Sources */,
 				9ED853D324F38F66008A73DB /* ChatViewController.swift in Sources */,
+				9EB6C02124F62F6B00A3C9F7 /* LocationViewController.swift in Sources */,
 				9EED3BE824EFAFD80014C67D /* ContactController.swift in Sources */,
+				9EB6C02324F6428A00A3C9F7 /* SamuiCollectionViewCell.swift in Sources */,
 				9EAAE45024F4B0F500D9A406 /* FAQData.swift in Sources */,
 				9EF190C824ED019B00771C79 /* SamuiScrollView.swift in Sources */,
 				9E88D38924F3D9BF0046FF53 /* AbstractDataFAQ.swift in Sources */,
@@ -442,11 +468,13 @@
 				9EAAE45424F4B1A700D9A406 /* FAQDataModel.swift in Sources */,
 				9EED3BF124EFC7380014C67D /* Samui180TabBarViewController.swift in Sources */,
 				9EC979A324EBCEF6007AC85C /* SceneDelegate.swift in Sources */,
+				9EB79C5224F9079C007EDADE /* GetPromotion.swift in Sources */,
 				9E4C67EE24ED295F005CD42B /* SamuiTabBar.swift in Sources */,
 				9EC979ED24ECF725007AC85C /* ScrollViewModel.swift in Sources */,
 				9EF190CA24ED0C2400771C79 /* Constants.swift in Sources */,
 				9EED3BED24EFB00C0014C67D /* FAQController.swift in Sources */,
 				9E88D38524F3B8890046FF53 /* FAQDataViewModel.swift in Sources */,
+				9EB6C01F24F62F4700A3C9F7 /* LinksViewController.swift in Sources */,
 				9EAAE45B24F5117000D9A406 /* HelperUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

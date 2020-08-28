@@ -36,15 +36,10 @@ class ContactController: UIViewController {
         addContentToSubViews(subView: diningView, text: "Request Dining", buttonText: "08122114411")
     }
     
-    //    override func viewWillLayoutSubviews() {
-    //        super.viewWillLayoutSubviews()
-    //
-    //
-    //
-    //    }
-    
+   
     func addContentToSubViews(subView: UIView, text: String, buttonText: String) {
         
+        // Create Label
         let label: UILabel = {
             let lb = UILabel()
             lb.translatesAutoresizingMaskIntoConstraints = false
@@ -57,10 +52,8 @@ class ContactController: UIViewController {
             return lb
         }()
         
-        let subViewWidth = subView.frame.width
-        let subViewHeight = subView.frame.height
-        
-        let button = UIButton(frame: CGRect(x: subViewWidth - 140, y: (subViewHeight / 2) - 12.5, width: 130, height: 25))
+        // Create Button
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 130, height: 25))
         button.backgroundColor = .red
         button.setTitle(buttonText, for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
@@ -73,22 +66,20 @@ class ContactController: UIViewController {
         subView.addSubview(label)
         subView.addSubview(button)
         
+        // Label and button constrains
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        let constraints = [
+            button.trailingAnchor.constraint(equalTo: subView.trailingAnchor, constant: -20),
+            
+            button.centerYAnchor.constraint(equalTo: subView.centerYAnchor),
+            button.widthAnchor.constraint(equalToConstant: 125),
+        ]
+        
+        NSLayoutConstraint.activate(constraints)
+        
         label.leadingAnchor.constraint(equalTo: subView.leadingAnchor, constant: 10).isActive = true
-        label.topAnchor.constraint(equalTo: subView.topAnchor, constant: 10).isActive = true
-        //  label.trailingAnchor.constraint(equalTo: subView.trailingAnchor, constant: -10).isActive = true
-        label.bottomAnchor.constraint(equalTo: subView.bottomAnchor, constant: -10).isActive = true
-        
-        
-        trailingConstraint.constant = 20
-        
-        //   button.leadingAnchor.constraint(equalTo: subView.leadingAnchor, constant: 10).isActive = true
-        
-        //        button.topAnchor.constraint(equalTo: label.topAnchor, constant: 20).isActive = true
-        //        button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        //        button.trailingAnchor.constraint(equalTo: subView.trailingAnchor, constant: -10).isActive = false
-        //        button.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        //        button.bottomAnchor.constraint(equalTo: subView.bottomAnchor, constant: 10).isActive = true
-        //
+        label.centerYAnchor.constraint(equalTo: subView.centerYAnchor).isActive = true
         
     }
     
@@ -115,5 +106,8 @@ class ContactController: UIViewController {
         
     }
     
+    
+    
+    //TODO:- Need to set up actions for when these are clicked.
 }
 

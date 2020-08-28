@@ -9,8 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-
+    
     @IBOutlet weak var containerView: UIView!
     
     @IBOutlet weak var eventsButton: UIButton!
@@ -19,13 +18,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var galleryButton: UIButton!
     
     let scrollViewModel = ScrollViewModel()
-
     
+       
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUpCallToActionView()
         setUpImagesForButtonsInScrollView()
+        
+        // Set tags for the buttons
+        eventsButton.tag = 0
+        diningButton.tag = 1
+        locationButton.tag = 2
+        galleryButton.tag = 3
     }
     
     func setUpCallToActionView() {
@@ -36,9 +41,9 @@ class ViewController: UIViewController {
         containerView.layer.shadowRadius = 15
         
         containerView.layer.shadowPath = UIBezierPath(rect: containerView.bounds).cgPath
-//
+        //
         containerView.layer.shouldRasterize = true
-//        cardView.layer.rasterizationScale = UIScreen.main.scale
+        //        cardView.layer.rasterizationScale = UIScreen.main.scale
     }
     
     func setUpImagesForButtonsInScrollView() {
@@ -47,7 +52,7 @@ class ViewController: UIViewController {
         let diningImage = scrollViewModel.returnImageForView(for: kTypeDining)
         let locationImage = scrollViewModel.returnImageForView(for: kTypeLocation)
         let galleryImage = scrollViewModel.returnImageForView(for: kTypeGallery)
-      
+        
         eventsButton.setImage(UIImage(named: eventsImage), for: .normal)
         diningButton.setImage(UIImage(named: diningImage), for: .normal)
         locationButton.setImage(UIImage(named: locationImage), for: .normal)
@@ -59,7 +64,7 @@ class ViewController: UIViewController {
         diningButton.addSubview(setUpTextForImages(for: kTypeDining))
         locationButton.addSubview(setUpTextForImages(for: kTypeLocation))
         galleryButton.addSubview(setUpTextForImages(for: kTypeGallery))
-
+        
     }
     
     func setUpTextForImages(for text: String) -> UILabel {
@@ -76,13 +81,60 @@ class ViewController: UIViewController {
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: label.font.pointSize)
         label.font = label.font.withSize(28)
-
+        
         return label
     }
-
-
+    
+    
     @IBAction func bookNow(_ sender: Any) {
         print("BOOKED NOWS")
+       
+    }
+    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let senderButton = sender.self as! UIButton
+        print("Handle Swgue \(senderButton)")
+        
+        let tag = senderButton.tag
+        print("TAG - \(tag)")
+        
+        if segue.identifier == "LinksView" {
+            
+            if let linksVC = segue.destination as? LinksViewController {
+                
+                switch tag {
+                case 0:
+                    print("Events Clicked")
+                    
+                    linksVC.passDataToLinksVC(type: "Events")
+                    
+                case 1:
+                    print("Dining Clicked")
+                    linksVC.passDataToLinksVC(type: "Dining")
+
+                case 3:
+                    print("Gallery Clicked")
+                    linksVC.passDataToLinksVC(type: "Gallery")
+
+                default:
+                    print("Hmmm something wrong with my counter")
+                }
+            }
+            
+            
+        } else if segue.identifier == "LocatioView" {
+        
+            if let locationVC = segue.destination as? LocationViewController {
+                print("Location Accessed")
+
+//                 locationVC.passDataToLinksVC(type: "Location")
+                
+            }
+        
+        }
     }
 }
+
+
 
