@@ -44,6 +44,9 @@
 		9EC979E524EBD30F007AC85C /* pool.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979DA24EBD30E007AC85C /* pool.jpg */; };
 		9EC979E824EBD5C5007AC85C /* 180_home_sml-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC979E724EBD5C5007AC85C /* 180_home_sml-black.png */; };
 		9EC979ED24ECF725007AC85C /* ScrollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC979EC24ECF725007AC85C /* ScrollViewModel.swift */; };
+		9ED2E9E924FCEDC600E647F9 /* LinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2E9E824FCEDC600E647F9 /* LinksModel.swift */; };
+		9ED2E9EB24FD045000E647F9 /* LinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2E9EA24FD045000E647F9 /* LinksViewModel.swift */; };
+		9ED2E9ED24FD1B0E00E647F9 /* PopUpLinksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2E9EC24FD1B0E00E647F9 /* PopUpLinksController.swift */; };
 		9ED853D324F38F66008A73DB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D224F38F66008A73DB /* ChatViewController.swift */; };
 		9ED853D424F38F66008A73DB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D224F38F66008A73DB /* ChatViewController.swift */; };
 		9ED853D524F38F66008A73DB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D224F38F66008A73DB /* ChatViewController.swift */; };
@@ -125,6 +128,9 @@
 		9EC979DA24EBD30E007AC85C /* pool.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pool.jpg; sourceTree = "<group>"; };
 		9EC979E724EBD5C5007AC85C /* 180_home_sml-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180_home_sml-black.png"; sourceTree = "<group>"; };
 		9EC979EC24ECF725007AC85C /* ScrollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewModel.swift; sourceTree = "<group>"; };
+		9ED2E9E824FCEDC600E647F9 /* LinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksModel.swift; sourceTree = "<group>"; };
+		9ED2E9EA24FD045000E647F9 /* LinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewModel.swift; sourceTree = "<group>"; };
+		9ED2E9EC24FD1B0E00E647F9 /* PopUpLinksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpLinksController.swift; sourceTree = "<group>"; };
 		9ED853D224F38F66008A73DB /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		9ED853D624F3A5CC008A73DB /* FAQDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDataView.swift; sourceTree = "<group>"; };
 		9ED853DA24F3AE47008A73DB /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 		9EAAE44C24F4AFA400D9A406 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9EB79C5124F9079C007EDADE /* GetPromotion.swift */,
 				9EAAE45124F4B10700D9A406 /* Sample_data.json */,
 				9EAAE44F24F4B0F500D9A406 /* FAQData.swift */,
 				9EAAE45324F4B1A700D9A406 /* FAQDataModel.swift */,
@@ -181,7 +188,6 @@
 		9EC9799424EBCEF6007AC85C = {
 			isa = PBXGroup;
 			children = (
-				9EB79C5124F9079C007EDADE /* GetPromotion.swift */,
 				9EAAE45924F5115F00D9A406 /* Misc */,
 				9EAAE44C24F4AFA400D9A406 /* Data */,
 				9EED3BEB24EFAFE40014C67D /* Controllers */,
@@ -212,7 +218,6 @@
 				9EC979A024EBCEF6007AC85C /* AppDelegate.swift */,
 				9EC979A224EBCEF6007AC85C /* SceneDelegate.swift */,
 				9EC979A624EBCEF6007AC85C /* Main.storyboard */,
-				9EB79C4F24F9026D007EDADE /* PromotionViewModel.swift */,
 				9EC979A924EBCEF9007AC85C /* Assets.xcassets */,
 				9EC979AB24EBCEF9007AC85C /* LaunchScreen.storyboard */,
 				9EC979AE24EBCEF9007AC85C /* Info.plist */,
@@ -274,7 +279,9 @@
 		9EC979EA24ECF6F7007AC85C /* VIewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9EB79C4F24F9026D007EDADE /* PromotionViewModel.swift */,
 				9EC979EC24ECF725007AC85C /* ScrollViewModel.swift */,
+				9ED2E9EA24FD045000E647F9 /* LinksViewModel.swift */,
 			);
 			path = VIewModels;
 			sourceTree = "<group>";
@@ -286,6 +293,7 @@
 				9E88D38624F3B96B0046FF53 /* FAQModel.swift */,
 				9E88D38824F3D9BF0046FF53 /* AbstractDataFAQ.swift */,
 				9E88D38424F3B8890046FF53 /* FAQDataViewModel.swift */,
+				9ED2E9E824FCEDC600E647F9 /* LinksModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -293,6 +301,7 @@
 		9EED3BEB24EFAFE40014C67D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9ED2E9EC24FD1B0E00E647F9 /* PopUpLinksController.swift */,
 				9EC979A424EBCEF6007AC85C /* ViewController.swift */,
 				9EED3BEC24EFB00C0014C67D /* FAQController.swift */,
 				9EED3BE724EFAFD80014C67D /* ContactController.swift */,
@@ -464,8 +473,11 @@
 				9EF190C824ED019B00771C79 /* SamuiScrollView.swift in Sources */,
 				9E88D38924F3D9BF0046FF53 /* AbstractDataFAQ.swift in Sources */,
 				9ED853D724F3A5CC008A73DB /* FAQDataView.swift in Sources */,
+				9ED2E9ED24FD1B0E00E647F9 /* PopUpLinksController.swift in Sources */,
 				9E88D38724F3B96B0046FF53 /* FAQModel.swift in Sources */,
 				9EAAE45424F4B1A700D9A406 /* FAQDataModel.swift in Sources */,
+				9ED2E9EB24FD045000E647F9 /* LinksViewModel.swift in Sources */,
+				9ED2E9E924FCEDC600E647F9 /* LinksModel.swift in Sources */,
 				9EED3BF124EFC7380014C67D /* Samui180TabBarViewController.swift in Sources */,
 				9EC979A324EBCEF6007AC85C /* SceneDelegate.swift in Sources */,
 				9EB79C5224F9079C007EDADE /* GetPromotion.swift in Sources */,

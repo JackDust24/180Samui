@@ -12,48 +12,35 @@ private let itemsPerRow: CGFloat = 2
 
 class LinksViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    let linksVM = Links()
+    
     var titleForLLabel: String = "Title"
+    var linksType: String = ""
+    
+    var linksLabels = [String]()
+    // Temp labels
+    var linksImages = [String]()
+    
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var collectionView: UICollectionView!
     let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
-    var itemsLabels = ["1", "2", "3", "4", "5", "6", "7", "8"]
-    // Temp labels
-    var itemsImages = ["couple.jpg", "dining.jpg", "dive.jpg", "pool.jpg", "sunrise.jpg", "villa-design2.jpg", "home_drone.jpg", "Home_5104.1.jpg"]
+    //    var itemsLabels = ["1", "2", "3", "4", "5", "6", "7", "8"]
+    //    // Temp labels
+    //    var itemsImages = ["couple.jpg", "dining.jpg", "dive.jpg", "pool.jpg", "sunrise.jpg", "villa-design2.jpg", "home_drone.jpg", "Home_5104.1.jpg"]
     private let sectionInsets = UIEdgeInsets(top: 50.0,
                                              left: 20.0,
                                              bottom: 50.0,
                                              right: 20.0)
     
     
-    
-    // MARK: - UICollectionViewDataSource protocol
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.itemsLabels.count
-    }
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // get a reference to our storyboard cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! SamuiCollectionViewCell
-        
-        // Use the outlet in our custom class to get a reference to the UILabel in the cell
-        let image = "\(self.itemsImages[indexPath.item])"
-        cell.myLabel.text = self.itemsLabels[indexPath.item]
-        cell.myImage.image = UIImage(named: image)
-        cell.backgroundColor = UIColor.cyan // make cell more visible in our example project
-        
-        return cell
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.titleLabel.text = titleForLLabel
+        
+        linksLabels = linksVM.returnSpecificItems(type: linksType, for: .title)
+        linksImages = linksVM.returnSpecificItems(type: linksType, for: .image)
         //        let itemSize = UIScreen.main.bounds.width/2 - 3
         //
         //        let layout = UICollectionViewFlowLayout()
@@ -67,11 +54,40 @@ class LinksViewController: UIViewController, UICollectionViewDataSource, UIColle
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    // MARK: - UICollectionViewDataSource protocol
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.linksLabels.count
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // get a reference to our storyboard cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! SamuiCollectionViewCell
+        
+        // Use the outlet in our custom class to get a reference to the UILabel in the cell
+        let image = "\(self.linksImages[indexPath.item])"
+        cell.myLabel.text = self.linksLabels[indexPath.item]
+        cell.myImage.image = UIImage(named: image)
+        cell.backgroundColor = UIColor.cyan // make cell more visible in our example project
+        
+        return cell
+    }
+    
+    
+    
+    
     // MARK: - UICollectionViewDelegate protocol
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
         print("You selected cell #\(indexPath.item)!")
+        
+        performSegue(withIdentifier: "LinksPopUp", sender: self)
     }
     
     /*
@@ -95,7 +111,7 @@ extension LinksViewController : UICollectionViewDelegateFlowLayout {
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         print("UICollectionViewDelegateFlowLayout Called")
         //2
-        let widthTest = collectionView.frame.width
+//        let widthTest = collectionView.frame.width
         
         /*
          let paddingSpace = sectionInsets.left * (itemsPerRow + 0)
@@ -124,6 +140,7 @@ extension LinksViewController : UICollectionViewDelegateFlowLayout {
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return sectionInsets.left
     }
+    
 }
 
 
@@ -133,6 +150,7 @@ extension LinksViewController {
         print("Delegate passed - \(type)")
         //TODO: Error Handling
         titleForLLabel = type
+        linksType = type
     }
 }
 

@@ -107,15 +107,15 @@ class ViewController: UIViewController {
                 case 0:
                     print("Events Clicked")
                     
-                    linksVC.passDataToLinksVC(type: "Events")
+                    linksVC.passDataToLinksVC(type: kTypeEvents)
                     
                 case 1:
                     print("Dining Clicked")
-                    linksVC.passDataToLinksVC(type: "Dining")
+                    linksVC.passDataToLinksVC(type: kTypeDining)
 
                 case 3:
                     print("Gallery Clicked")
-                    linksVC.passDataToLinksVC(type: "Gallery")
+                    linksVC.passDataToLinksVC(type: kTypeGallery)
 
                 default:
                     print("Hmmm something wrong with my counter")
