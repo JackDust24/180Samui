@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChatViewController: UIViewController {
+class PromoViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
 

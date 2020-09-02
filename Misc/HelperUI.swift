@@ -9,21 +9,39 @@
 import Foundation
 import UIKit
 
+extension UIButton {
+    
+    // For UI Buttons so they can have a corner
+    func addCornerRadiusToButton(radius: CGFloat) {
+        
+        self.layer.cornerRadius = radius
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.lightGray.cgColor
+        self.clipsToBounds = true
+        
+    }
+    
+}
+
+extension UITextField {
+    
+    func addCornerRadiusToTextField(radius: CGFloat) {
+        
+        self.layer.cornerRadius = radius
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.lightGray.cgColor
+        self.clipsToBounds = true
+        
+    }
+    
+    
+}
+
 // For UI Views so they can have a corner
 func setCurvedRadiusForDisplay(view: UIView, radius: CGFloat) {
     
     view.layer.cornerRadius = radius
     view.clipsToBounds = true
-    
-}
-
-// For UI Buttons so they can have a corner
-func addCornerRadiusToButton(button: UIButton) {
-    
-    button.layer.cornerRadius = 10
-    button.layer.borderWidth = 1
-    button.layer.borderColor = UIColor.lightGray.cgColor
-    button.clipsToBounds = true
     
 }
 

@@ -60,7 +60,8 @@ class ContactController: UIViewController, WKNavigationDelegate {
         // Increase the tag counter for the next button.
         buttonTagCounter += 1
         
-        addCornerRadiusToButton(button: button)
+        // addCornerRadiusToButton(button: button)
+        button.addCornerRadiusToButton(radius: 10)
         
         subView.addSubview(label)
         subView.addSubview(button)

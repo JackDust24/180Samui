@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9E4C67EE24ED295F005CD42B /* SamuiTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C67ED24ED295F005CD42B /* SamuiTabBar.swift */; };
+		9E6DC00C24FFA28A00FECD9B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DC00B24FFA28A00FECD9B /* LoginViewController.swift */; };
+		9E6DC00E24FFA2EA00FECD9B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DC00D24FFA2EA00FECD9B /* RegisterViewController.swift */; };
+		9E6DC01024FFA32900FECD9B /* MessageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DC00F24FFA32900FECD9B /* MessageViewViewController.swift */; };
+		9E6DC01224FFA45500FECD9B /* AccessChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DC01124FFA45500FECD9B /* AccessChatViewController.swift */; };
 		9E88D38524F3B8890046FF53 /* FAQDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88D38424F3B8890046FF53 /* FAQDataViewModel.swift */; };
 		9E88D38724F3B96B0046FF53 /* FAQModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88D38624F3B96B0046FF53 /* FAQModel.swift */; };
 		9E88D38924F3D9BF0046FF53 /* AbstractDataFAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88D38824F3D9BF0046FF53 /* AbstractDataFAQ.swift */; };
@@ -47,9 +51,9 @@
 		9ED2E9E924FCEDC600E647F9 /* LinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2E9E824FCEDC600E647F9 /* LinksModel.swift */; };
 		9ED2E9EB24FD045000E647F9 /* LinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2E9EA24FD045000E647F9 /* LinksViewModel.swift */; };
 		9ED2E9ED24FD1B0E00E647F9 /* PopUpLinksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2E9EC24FD1B0E00E647F9 /* PopUpLinksController.swift */; };
-		9ED853D324F38F66008A73DB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D224F38F66008A73DB /* ChatViewController.swift */; };
-		9ED853D424F38F66008A73DB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D224F38F66008A73DB /* ChatViewController.swift */; };
-		9ED853D524F38F66008A73DB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D224F38F66008A73DB /* ChatViewController.swift */; };
+		9ED853D324F38F66008A73DB /* PromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D224F38F66008A73DB /* PromoViewController.swift */; };
+		9ED853D424F38F66008A73DB /* PromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D224F38F66008A73DB /* PromoViewController.swift */; };
+		9ED853D524F38F66008A73DB /* PromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D224F38F66008A73DB /* PromoViewController.swift */; };
 		9ED853D724F3A5CC008A73DB /* FAQDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D624F3A5CC008A73DB /* FAQDataView.swift */; };
 		9ED853D824F3A5CC008A73DB /* FAQDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D624F3A5CC008A73DB /* FAQDataView.swift */; };
 		9ED853D924F3A5CC008A73DB /* FAQDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED853D624F3A5CC008A73DB /* FAQDataView.swift */; };
@@ -86,6 +90,10 @@
 
 /* Begin PBXFileReference section */
 		9E4C67ED24ED295F005CD42B /* SamuiTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamuiTabBar.swift; sourceTree = "<group>"; };
+		9E6DC00B24FFA28A00FECD9B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9E6DC00D24FFA2EA00FECD9B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9E6DC00F24FFA32900FECD9B /* MessageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewViewController.swift; sourceTree = "<group>"; };
+		9E6DC01124FFA45500FECD9B /* AccessChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessChatViewController.swift; sourceTree = "<group>"; };
 		9E88D38424F3B8890046FF53 /* FAQDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDataViewModel.swift; sourceTree = "<group>"; };
 		9E88D38624F3B96B0046FF53 /* FAQModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQModel.swift; sourceTree = "<group>"; };
 		9E88D38824F3D9BF0046FF53 /* AbstractDataFAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractDataFAQ.swift; sourceTree = "<group>"; };
@@ -131,7 +139,7 @@
 		9ED2E9E824FCEDC600E647F9 /* LinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksModel.swift; sourceTree = "<group>"; };
 		9ED2E9EA24FD045000E647F9 /* LinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewModel.swift; sourceTree = "<group>"; };
 		9ED2E9EC24FD1B0E00E647F9 /* PopUpLinksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpLinksController.swift; sourceTree = "<group>"; };
-		9ED853D224F38F66008A73DB /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		9ED853D224F38F66008A73DB /* PromoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoViewController.swift; sourceTree = "<group>"; };
 		9ED853D624F3A5CC008A73DB /* FAQDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDataView.swift; sourceTree = "<group>"; };
 		9ED853DA24F3AE47008A73DB /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		9EED3BE724EFAFD80014C67D /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
@@ -301,15 +309,19 @@
 		9EED3BEB24EFAFE40014C67D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9ED2E9EC24FD1B0E00E647F9 /* PopUpLinksController.swift */,
 				9EC979A424EBCEF6007AC85C /* ViewController.swift */,
-				9EED3BEC24EFB00C0014C67D /* FAQController.swift */,
 				9EED3BE724EFAFD80014C67D /* ContactController.swift */,
 				9EB6C01E24F62F4700A3C9F7 /* LinksViewController.swift */,
-				9ED853D224F38F66008A73DB /* ChatViewController.swift */,
-				9EAAE45524F4C5E100D9A406 /* FAQDetailViewController.swift */,
+				9ED2E9EC24FD1B0E00E647F9 /* PopUpLinksController.swift */,
 				9EB6C02024F62F6B00A3C9F7 /* LocationViewController.swift */,
 				9EB6C02224F6428A00A3C9F7 /* SamuiCollectionViewCell.swift */,
+				9ED853D224F38F66008A73DB /* PromoViewController.swift */,
+				9E6DC01124FFA45500FECD9B /* AccessChatViewController.swift */,
+				9E6DC00B24FFA28A00FECD9B /* LoginViewController.swift */,
+				9E6DC00D24FFA2EA00FECD9B /* RegisterViewController.swift */,
+				9E6DC00F24FFA32900FECD9B /* MessageViewViewController.swift */,
+				9EED3BEC24EFB00C0014C67D /* FAQController.swift */,
+				9EAAE45524F4C5E100D9A406 /* FAQDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -465,7 +477,7 @@
 				9EAAE45724F4C5E100D9A406 /* FAQDetailViewController.swift in Sources */,
 				9EC979A524EBCEF6007AC85C /* ViewController.swift in Sources */,
 				9EC979A124EBCEF6007AC85C /* AppDelegate.swift in Sources */,
-				9ED853D324F38F66008A73DB /* ChatViewController.swift in Sources */,
+				9ED853D324F38F66008A73DB /* PromoViewController.swift in Sources */,
 				9EB6C02124F62F6B00A3C9F7 /* LocationViewController.swift in Sources */,
 				9EED3BE824EFAFD80014C67D /* ContactController.swift in Sources */,
 				9EB6C02324F6428A00A3C9F7 /* SamuiCollectionViewCell.swift in Sources */,
@@ -477,16 +489,20 @@
 				9E88D38724F3B96B0046FF53 /* FAQModel.swift in Sources */,
 				9EAAE45424F4B1A700D9A406 /* FAQDataModel.swift in Sources */,
 				9ED2E9EB24FD045000E647F9 /* LinksViewModel.swift in Sources */,
+				9E6DC00C24FFA28A00FECD9B /* LoginViewController.swift in Sources */,
 				9ED2E9E924FCEDC600E647F9 /* LinksModel.swift in Sources */,
 				9EED3BF124EFC7380014C67D /* Samui180TabBarViewController.swift in Sources */,
+				9E6DC00E24FFA2EA00FECD9B /* RegisterViewController.swift in Sources */,
 				9EC979A324EBCEF6007AC85C /* SceneDelegate.swift in Sources */,
 				9EB79C5224F9079C007EDADE /* GetPromotion.swift in Sources */,
 				9E4C67EE24ED295F005CD42B /* SamuiTabBar.swift in Sources */,
+				9E6DC01024FFA32900FECD9B /* MessageViewViewController.swift in Sources */,
 				9EC979ED24ECF725007AC85C /* ScrollViewModel.swift in Sources */,
 				9EF190CA24ED0C2400771C79 /* Constants.swift in Sources */,
 				9EED3BED24EFB00C0014C67D /* FAQController.swift in Sources */,
 				9E88D38524F3B8890046FF53 /* FAQDataViewModel.swift in Sources */,
 				9EB6C01F24F62F4700A3C9F7 /* LinksViewController.swift in Sources */,
+				9E6DC01224FFA45500FECD9B /* AccessChatViewController.swift in Sources */,
 				9EAAE45B24F5117000D9A406 /* HelperUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,7 +515,7 @@
 				9ED853D824F3A5CC008A73DB /* FAQDataView.swift in Sources */,
 				9EED3BEE24EFB00C0014C67D /* FAQController.swift in Sources */,
 				9EED3BF224EFC7380014C67D /* Samui180TabBarViewController.swift in Sources */,
-				9ED853D424F38F66008A73DB /* ChatViewController.swift in Sources */,
+				9ED853D424F38F66008A73DB /* PromoViewController.swift in Sources */,
 				9EC979B824EBCEF9007AC85C /* _80SamuiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +528,7 @@
 				9ED853D924F3A5CC008A73DB /* FAQDataView.swift in Sources */,
 				9EED3BEF24EFB00C0014C67D /* FAQController.swift in Sources */,
 				9EED3BF324EFC7380014C67D /* Samui180TabBarViewController.swift in Sources */,
-				9ED853D524F38F66008A73DB /* ChatViewController.swift in Sources */,
+				9ED853D524F38F66008A73DB /* PromoViewController.swift in Sources */,
 				9EC979C324EBCEF9007AC85C /* _80SamuiUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

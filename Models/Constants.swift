@@ -13,3 +13,5 @@ let kTypeDining = "Dining"
 let kTypeEvents = "Events"
 let kTypeLocation = "Location"
 let kTypeGallery = "Gallery"
+
+let kAppTitle = "⚡️180 Samui"
