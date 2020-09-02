@@ -8,9 +8,9 @@
 
 import Foundation
 import UIKit
+import WebKit
 
-class ContactController: UIViewController {
-    
+class ContactController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var trailingConstraint: NSLayoutConstraint!
     @IBOutlet weak var enquiryView: UIView!
@@ -19,7 +19,6 @@ class ContactController: UIViewController {
     @IBOutlet weak var diningView: UIView!
     
     var buttonTagCounter = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,13 +85,12 @@ class ContactController: UIViewController {
     @objc func buttonAction(_ sender: Any) {
         
         let senderButton = sender.self as! UIButton
-        print("Test Button \(senderButton)")
-        
         let tag = senderButton.tag
         
         switch tag {
         case 0:
             print("Enquiry Clicked")
+           // presentWebView()
         case 1:
             print("Request Clicked")
         case 2:
@@ -102,9 +100,18 @@ class ContactController: UIViewController {
         default:
             print("Hmmm something wrong with my counter")
         }
-        
-        
     }
+    
+//    func presentWebView() {
+//
+//        let webView = WKWebView()
+//        webView.navigationDelegate = self
+//        view = webView
+//
+//        let url = URL(string: "http://180samui.com/booking")!
+//        webView.load(URLRequest(url: url))
+//        webView.allowsBackForwardNavigationGestures = true
+//    }
     
     
     

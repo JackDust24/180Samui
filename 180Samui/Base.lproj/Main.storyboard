@@ -625,7 +625,7 @@ Your Home</string>
                                         <color key="textColor" red="0.023529411760000001" green="0.0" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="dive.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="E0x-pt-K5m">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="E0x-pt-K5m">
                                         <rect key="frame" x="10" y="10" width="275" height="313.5"/>
                                     </imageView>
                                 </subviews>
@@ -651,6 +651,10 @@ Your Home</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CY8-fN-6PK"/>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="E0x-pt-K5m" id="6jL-Lm-U6S"/>
+                        <outlet property="label" destination="PE7-Kn-zND" id="NzD-Fz-pNB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CLv-du-MS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -871,7 +875,6 @@ Your Home</string>
     <resources>
         <image name="180_home_sml-black.png" width="272" height="107"/>
         <image name="180_home_sml.png" width="60" height="23.5"/>
-        <image name="dive.jpg" width="2000" height="1330"/>
         <image name="homeIcon" width="70" height="70"/>
         <image name="home_0718-1.jpg" width="2000" height="1335"/>
         <image name="home_icon_select" width="70" height="70"/>

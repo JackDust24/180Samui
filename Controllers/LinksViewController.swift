@@ -7,55 +7,55 @@
 //
 
 import UIKit
+
 private let itemsPerRow: CGFloat = 2
 
+// So we have specific info about the chosen link.
+private struct SpecificLink {
+    
+    let title: String
+    let image: String
+}
 
 class LinksViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    //MARK: Properties
+    // The View model property
     let linksVM = Links()
-    
-    var titleForLLabel: String = "Title"
+    // Is it an event, or Gallery? This is popul;ated from the main controller
     var linksType: String = ""
-    
     var linksLabels = [String]()
-    // Temp labels
     var linksImages = [String]()
     
-    @IBOutlet weak var titleLabel: UILabel!
+    // For popualting the title label
+    var titleForLLabel: String = "Title"
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
-    let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
-    //    var itemsLabels = ["1", "2", "3", "4", "5", "6", "7", "8"]
-    //    // Temp labels
-    //    var itemsImages = ["couple.jpg", "dining.jpg", "dive.jpg", "pool.jpg", "sunrise.jpg", "villa-design2.jpg", "home_drone.jpg", "Home_5104.1.jpg"]
+    
+    // Collection Cell Info
+    let reuseIdentifier = "cell" // also enter this string as the cell identifier in
     private let sectionInsets = UIEdgeInsets(top: 50.0,
                                              left: 20.0,
                                              bottom: 50.0,
                                              right: 20.0)
     
+    // For passing data to the detail pop up controller
+    fileprivate var specificLink: SpecificLink!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.titleLabel.text = titleForLLabel
         
+        // Populate the labels and images
         linksLabels = linksVM.returnSpecificItems(type: linksType, for: .title)
         linksImages = linksVM.returnSpecificItems(type: linksType, for: .image)
-        //        let itemSize = UIScreen.main.bounds.width/2 - 3
-        //
-        //        let layout = UICollectionViewFlowLayout()
-        //        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        //        layout.itemSize = CGSize(width: itemSize, height: itemSize)
-        //
-        //        layout.minimumInteritemSpacing = 3
-        //        layout.minimumLineSpacing = 3
-        //
-        //        collectionView.collectionViewLayout = layout
-        // Do any additional setup after loading the view.
+
+        
     }
     
-    
-    
+        
     // MARK: - UICollectionViewDataSource protocol
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.linksLabels.count
@@ -87,18 +87,37 @@ class LinksViewController: UIViewController, UICollectionViewDataSource, UIColle
         // handle tap events
         print("You selected cell #\(indexPath.item)!")
         
-        performSegue(withIdentifier: "LinksPopUp", sender: self)
+        let image = "\(self.linksImages[indexPath.item])"
+        let label = self.linksLabels[indexPath.item]
+        
+        specificLink = SpecificLink(title: label, image: image)
+        
+        performSegue(withIdentifier: "LinksPopUp", sender: specificLink)
     }
     
-    /*
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        print("Prepare segue Info")
+        
+        if segue.identifier == "LinksPopUp" {
+
+             if let popUpVC = segue.destination as? PopUpLinksController {
+
+                popUpVC.passedTitle = specificLink.title
+                popUpVC.passedImage = specificLink.image
+
+             }
+
+         }
+        
      // Get the new view controller using segue.destination.
      // Pass the selected object to the new view controller.
      }
-     */
+     
     
 }
 

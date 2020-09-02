@@ -10,14 +10,24 @@ import UIKit
 
 class PopUpLinksController: UIViewController {
 
+    @IBOutlet weak var image: UIImageView!
+    
+    @IBOutlet weak var label: UILabel!
+    
+    var passedTitle: String!
+    var passedImage: String!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print("POPUP")
+        
+        label.text = passedTitle
+        image.image = UIImage(named: passedImage)
         // Do any additional setup after loading the view.
     }
-    
 
+    
     /*
     // MARK: - Navigation
 
